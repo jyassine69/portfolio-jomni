@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Yassine Jemni</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: #0d0d0d;
+            color: #e6e6e6;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10%;
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            color: #ff3b3b;
+        }
+        nav a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 10%;
+            background: linear-gradient(135deg, #0d0d0d, #1b1b1b);
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #ff3b3b;
+        }
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .hero-img img {
+            width: 320px;
+            border-radius: 20px;
+            border: 2px solid #ff3b3b;
+        }
+        section {
+            padding: 50px 10%;
+        }
+        h2 {
+            color: #ff3b3b;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            border: 1px solid #2a2a2a;
+        }
+        .skills span {
+            display: inline-block;
+            background: #222;
+            padding: 10px 16px;
+            border-radius: 8px;
+            margin: 6px;
+            border: 1px solid #333;
+            font-size: 14px;
+        }
+        .img-block img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 12px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #000;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YASSINE JEMNI</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#experience">Expérience</a>
+            <a href="#skills">Compétences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Développeur & Systèmes Embarqués</h2>
+            <p>
+                Passionné par le développement logiciel, les systèmes embarqués et la création de solutions innovantes.
+                Je transforme des idées en projets concrets, connectés et modernes.
+            </p>
+        </div>
+        <div class="hero-img">
+            <img src="https://via.placeholder.com/350x420?text=Photo+de+Profil" alt="Photo de profil" />
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>À propos</h2>
+        <div class="card">
+            Étudiant en technologies de l'informatique à l'ISET Radès, je maîtrise la programmation, l'électronique
+            et la conception de systèmes intelligents. Curieux, motivé et ambitieux, je cherche à évoluer dans un
+            environnement innovant.
+        </div>
+    </section>
+
+    <section>
+        <h2>Formation</h2>
+        <div class="card">
+            <strong>Licence en Technologies de l'Informatique – ISET Radès</strong><br />2023 – 2026
+            <br /><br />
+            <strong>Baccalauréat en Sciences Informatiques</strong><br />2022 – 2023
+        </div>
+        <div class="img-block">
+            <img src="https://via.placeholder.com/900x350?text=Universite+%2F+Campus" />
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience professionnelle</h2>
+
+        <div class="card">
+            <strong>Développement embarqué – Stage</strong><br />Jan 2025 – Fév 2025<br />
+            Conception d’un système Arduino complet (capteurs IR, moteurs pas-à-pas, LCD…).
+        </div>
+        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Arduino+Project" /></div>
+
+        <div class="card">
+            <strong>Développement Web MERN – Stage</strong><br />Jan 2024 – Fév 2024<br />
+            Création d’interfaces utilisateurs, API backend et gestion de base de données.
+        </div>
+        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Web+Development" /></div>
+
+        <div class="card">
+            <strong>Marque Streetwear – CHOSEN</strong><br />Nov 2024<br />
+            Branding, marketing digital, création de designs.
+        </div>
+        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Streetwear+Brand" /></div>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="card skills">
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>PHP</span>
+            <span>SQL</span>
+            <span>JavaScript</span>
+            <span>Arduino</span>
+            <span>Android Studio</span>
+            <span>MySQL</span>
+            <span>VS Code</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            📞 +216 58 672 495<br />
+            📧 yassinejomni06@gmail.com<br />
+            📍 Mourouj 4, Ben Arous
+        </div>
+    </section>
+
+    <footer>
+        © 2025 - Portfolio Professionnel de Yassine Jemni
+    </footer>
+</body>
+</html>
