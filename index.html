@@ -4,99 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Yassine Jemni</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: "Poppins", sans-serif;
-            background: #0d0d0d;
-            color: #e6e6e6;
+            background: #ffffff;
+            color: #222;
+            overflow-x: hidden;
         }
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 20px 10%;
-            background: #000;
+            background: #fff;
             position: sticky;
             top: 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
             z-index: 10;
         }
         header h1 {
             margin: 0;
             font-size: 28px;
-            letter-spacing: 1px;
             color: #ff3b3b;
+            font-weight: 700;
         }
         nav a {
             margin-left: 20px;
-            color: #fff;
+            color: #000;
             text-decoration: none;
             font-weight: 500;
+            transition: 0.3s;
         }
+        nav a:hover {
+            color: #ff3b3b;
+        }
+
         .hero {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 80px 10%;
-            background: linear-gradient(135deg, #0d0d0d, #1b1b1b);
+            animation: fadeIn 1.4s ease-out;
         }
-        .hero-text {
-            max-width: 50%;
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(30px);} 
+            to {opacity: 1; transform: translateY(0);} 
         }
+        .hero-text { max-width: 50%; }
         .hero-text h2 {
-            font-size: 40px;
-            margin-bottom: 10px;
-            color: #ff3b3b;
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #111;
         }
         .hero-text p {
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.6;
         }
         .hero-img img {
-            width: 320px;
+            width: 350px;
             border-radius: 20px;
-            border: 2px solid #ff3b3b;
+            animation: float 3s infinite ease-in-out;
         }
-        section {
-            padding: 50px 10%;
+        @keyframes float {
+            0% {transform: translateY(0);} 
+            50% {transform: translateY(-12px);} 
+            100% {transform: translateY(0);} 
         }
+
+        section { padding: 50px 10%; }
         h2 {
             color: #ff3b3b;
             margin-bottom: 20px;
             font-size: 28px;
         }
+
         .card {
-            background: #1a1a1a;
+            background: #fafafa;
             padding: 25px;
             border-radius: 14px;
             margin-bottom: 25px;
-            border: 1px solid #2a2a2a;
+            border: 1px solid #e6e6e6;
+            transition: 0.4s;
         }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
         .skills span {
             display: inline-block;
-            background: #222;
+            background: #fff;
             padding: 10px 16px;
             border-radius: 8px;
             margin: 6px;
-            border: 1px solid #333;
+            border: 1px solid #ddd;
             font-size: 14px;
+            transition: 0.3s;
         }
+        .skills span:hover { background: #ff3b3b; color: #fff; }
+
         .img-block img {
             width: 100%;
             border-radius: 12px;
             margin-top: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
         }
+        .img-block img:hover { transform: scale(1.02); }
+
         footer {
             text-align: center;
             padding: 25px;
-            background: #000;
+            background: #fafafa;
             margin-top: 40px;
-            color: #888;
+            color: #666;
         }
+
     </style>
 </head>
 <body>
+
     <header>
         <h1>YASSINE JEMNI</h1>
         <nav>
@@ -109,58 +141,46 @@
 
     <div class="hero">
         <div class="hero-text">
-            <h2>Développeur & Systèmes Embarqués</h2>
+            <h2>Développeur & Concepteur de Systèmes Embarqués</h2>
             <p>
-                Passionné par le développement logiciel, les systèmes embarqués et la création de solutions innovantes.
-                Je transforme des idées en projets concrets, connectés et modernes.
+                Passionné par les systèmes embarqués, le développement moderne et la création digitale.
+                Je transforme des idées en projets fonctionnels, innovants et professionnels.
             </p>
         </div>
         <div class="hero-img">
-            <img src="https://via.placeholder.com/350x420?text=Photo+de+Profil" alt="Photo de profil" />
+            <img src="https://via.placeholder.com/380x450?text=Votre+Photo" alt="Profile" />
         </div>
     </div>
 
     <section id="about">
-        <h2>À propos</h2>
+        <h2>À propos de moi</h2>
         <div class="card">
-            Étudiant en technologies de l'informatique à l'ISET Radès, je maîtrise la programmation, l'électronique
-            et la conception de systèmes intelligents. Curieux, motivé et ambitieux, je cherche à évoluer dans un
-            environnement innovant.
-        </div>
-    </section>
-
-    <section>
-        <h2>Formation</h2>
-        <div class="card">
-            <strong>Licence en Technologies de l'Informatique – ISET Radès</strong><br />2023 – 2026
-            <br /><br />
-            <strong>Baccalauréat en Sciences Informatiques</strong><br />2022 – 2023
-        </div>
-        <div class="img-block">
-            <img src="https://via.placeholder.com/900x350?text=Universite+%2F+Campus" />
+            Étudiant en Technologies de l’Informatique (ISET Radès), je me spécialise dans les systèmes embarqués
+            et le développement web. Créatif, organisé et motivé, je cherche toujours à repousser mes limites et
+            à développer des projets innovants.
         </div>
     </section>
 
     <section id="experience">
-        <h2>Expérience professionnelle</h2>
+        <h2>Expérience Professionnelle</h2>
 
         <div class="card">
-            <strong>Développement embarqué – Stage</strong><br />Jan 2025 – Fév 2025<br />
-            Conception d’un système Arduino complet (capteurs IR, moteurs pas-à-pas, LCD…).
+            <strong>Développement Embarqué – Stage</strong><br />
+            Conception d’un système Arduino complet : capteurs IR, moteurs pas-à-pas, écran LCD.
         </div>
-        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Arduino+Project" /></div>
+        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Projet+Arduino" /></div>
 
         <div class="card">
-            <strong>Développement Web MERN – Stage</strong><br />Jan 2024 – Fév 2024<br />
-            Création d’interfaces utilisateurs, API backend et gestion de base de données.
+            <strong>Développement Web – Stage MERN</strong><br />
+            Interfaces utilisateurs, APIs, gestion de base de données.
         </div>
-        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Web+Development" /></div>
+        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Développement+Web" /></div>
 
         <div class="card">
-            <strong>Marque Streetwear – CHOSEN</strong><br />Nov 2024<br />
-            Branding, marketing digital, création de designs.
+            <strong>CHOSEN – Marque Streetwear</strong><br />
+            Branding • Marketing Digital • Création Visuelle
         </div>
-        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=Streetwear+Brand" /></div>
+        <div class="img-block"><img src="https://via.placeholder.com/900x350?text=CHOSEN+Brand" /></div>
     </section>
 
     <section id="skills">
@@ -173,9 +193,9 @@
             <span>SQL</span>
             <span>JavaScript</span>
             <span>Arduino</span>
-            <span>Android Studio</span>
+            <span>Électronique</span>
             <span>MySQL</span>
-            <span>VS Code</span>
+            <span>Android Studio</span>
         </div>
     </section>
 
@@ -189,7 +209,7 @@
     </section>
 
     <footer>
-        © 2025 - Portfolio Professionnel de Yassine Jemni
+        © 2025 - Portfolio de Yassine Jemni
     </footer>
 </body>
 </html>
